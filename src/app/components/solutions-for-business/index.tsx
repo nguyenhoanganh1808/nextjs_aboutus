@@ -29,26 +29,26 @@ export default function SolutionsForBusiness() {
     },
   ];
   return (
-    <div className="px-96 pt-4 flex-col justify-center">
-      <h1 className=" text-center text-[#1253e9] text-5xl font-bold ">
-        GIẢI PHÁP DÀNH CHO DOANH NGHIỆP
-      </h1>
-      <div className=" text-center text-[#757575] text-base font-normal leading-normal">
-        Với đội ngũ nhiều năm kinh nghiệm trong lĩnh vực công nghệ và thể thao,
-        chung tôi tự hào đem đến những giải pháp tối ưu nhất cho các đơn vị tổ
-        chức sự kiện
+    <div className="pt-10 px-10 flex flex-col items-center gap-8">
+      <div className="max-w-lg lg:max-w-max text-left lg:text-center">
+        <h1 className="text-[#1253e9] text-3xl lg:text-5xl font-bold ">
+          GIẢI PHÁP DÀNH CHO DOANH NGHIỆP
+        </h1>
+        <p className="text-[#757575] text-sm md:text-base font-normal leading-relaxed max-w-3xl">
+          Với đội ngũ nhiều năm kinh nghiệm trong lĩnh vực công nghệ và thể
+          thao, chung tôi tự hào đem đến những giải pháp tối ưu nhất cho các đơn
+          vị tổ chức sự kiện
+        </p>
       </div>
 
-      <div className="grid md:grid-cols-6 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-6 gap-10">
         {cardsData.map((cardData, index) => (
-          <div
+          <Card
             key={cardData.title}
-            className={`${
-              index === 3 || index === 4 ? "col-span-3" : "col-span-2"
-            } ${index === 3 ? "place-self-end" : ""}`}
-          >
-            <Card title={cardData.title} description={cardData.description} />
-          </div>
+            index={index}
+            title={cardData.title}
+            description={cardData.description}
+          />
         ))}
       </div>
     </div>
