@@ -91,7 +91,7 @@ export default function ServiceDetails() {
           src={datas[0].image}
           alt="A man smiling"
         />
-        <div className="max-w-[530px] order-2 lg:order-none">
+        <div className="order-2 lg:order-none">
           <Card
             title={datas[0].title}
             descriptionList={datas[0].descriptionList}
