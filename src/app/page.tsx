@@ -1,4 +1,5 @@
 import Banner from "./components/banner";
+import ServiceDetails from "./components/service-details";
 import SolutionsForBusiness from "./components/solutions-for-business";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Banner />
       <SolutionsForBusiness />
+      <ServiceDetails />
     </>
   );
 }

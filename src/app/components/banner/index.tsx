@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-import bannerImage from "../../images/z5862419801373_d0d91c3348c238268a923b69435b8fc7.png";
+import bannerImage from "../../images/Banner.webp";
 import Button from "./button";
 
 export default function Banner() {
   return (
-    <div className="bg-gradient-to-l from-blue-600 via-purple-600 to-fuchsia-600 flex items-center justify-center text-white p-16">
+    <div className="bg-gradient-to-l from-blue-600 via-purple-600 to-fuchsia-600 flex flex-col lg:flex-row items-center justify-center  text-white p-16">
       <div className="max-w-xl">
-        <h1 className=" text-white text-[80px] font-bold capitalize leading-[66.24px] pb-8">
+        <h1 className=" text-white text-5xl lg:text-[80px]  font-bold capitalize leading-[66.24px] pb-8">
           ENJOY SPORT
         </h1>
 
@@ -23,12 +23,7 @@ export default function Banner() {
         </div>
       </div>
       <div>
-        <Image
-          width={550}
-          height={550}
-          src={bannerImage}
-          alt="A man wearing a red clothes smiling"
-        />
+        <Image width={550} height={550} src={bannerImage} alt="banner image" />
       </div>
     </div>
   );

@@ -29,9 +29,9 @@ export default function SolutionsForBusiness() {
     },
   ];
   return (
-    <div className="pt-10 px-10 flex flex-col items-center gap-8">
+    <div className="pt-10 p-8 px-10 flex flex-col items-center gap-8 bg-[#F5F6FE]">
       <div className="max-w-lg lg:max-w-max text-left lg:text-center">
-        <h1 className="text-[#1253e9] text-3xl lg:text-5xl font-bold ">
+        <h1 className="text-gradient text-3xl lg:text-[48px] lg:leading-loose font-bold">
           GIẢI PHÁP DÀNH CHO DOANH NGHIỆP
         </h1>
         <p className="text-[#757575] text-sm md:text-base font-normal leading-relaxed max-w-3xl">
