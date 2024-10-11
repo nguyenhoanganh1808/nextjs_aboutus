@@ -1,4 +1,5 @@
 import Banner from "./components/banner";
+import PaymentGateWay from "./components/payment-gateway";
 import ServiceDetails from "./components/service-details";
 import SolutionsForBusiness from "./components/solutions-for-business";
 import StatsOverview from "./components/stats-overview";
@@ -12,6 +13,7 @@ export default function Home() {
       <ServiceDetails />
       <StatsOverview />
       <WhyUs />
+      <PaymentGateWay />
     </>
   );
 }
