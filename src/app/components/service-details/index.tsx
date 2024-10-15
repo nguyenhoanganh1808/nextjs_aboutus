@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Card from "./card";
-import serviceImage from "../../images/Overlay+Shadow.png";
+import serviceImage from "@/../public/images/Overlay+Shadow.png";
+import { useGsapAnimations } from "@/app/hooks/useGsapAnimations";
 
 export default function ServiceDetails() {
+  const {} = useGsapAnimations();
   const datas = [
     {
       image: serviceImage,
@@ -73,10 +77,10 @@ export default function ServiceDetails() {
   return (
     <div className="pt-10 px-10 flex flex-col items-center gap-8">
       <div className="max-w-lg lg:max-w-max text-left lg:text-center">
-        <h1 className="text-gradient text-3xl lg:text-[48px] leading-normal lg:leading-loose font-bold">
+        <h1 className="text-gradient text-3xl lg:text-[48px] leading-normal lg:leading-loose font-bold fade-up">
           CHI TIẾT VỀ DỊCH VỤ CỦA CHÚNG TÔI
         </h1>
-        <p className="text-[#757575] text-sm md:text-base font-normal leading-relaxed max-w-3xl">
+        <p className="text-[#757575] text-sm md:text-base font-normal leading-relaxed max-w-3xl fade-up">
           Là đơn vị cung cấp dịch vụ SEO tổng thể chuyên nghiệp hàng đầu Việt
           Nam, đây là những lí do khiến hàng trăm doanh nghiệp lựa chọn GTV
           SEO là bạn đồng hành trên con đường phát triển. Và bạn cũng sẽ yêu
@@ -87,11 +91,11 @@ export default function ServiceDetails() {
       <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl gap-6 place-items-stretch">
         {/* First Row */}
         <Image
-          className="order-1 lg:order-none"
+          className="order-1 lg:order-none fade-left"
           src={datas[0].image}
           alt="A man smiling"
         />
-        <div className="order-2 lg:order-none">
+        <div className="order-2 lg:order-none fade-right">
           <Card
             title={datas[0].title}
             descriptionList={datas[0].descriptionList}
@@ -99,25 +103,25 @@ export default function ServiceDetails() {
         </div>
 
         {/* Second Row */}
-        <div className="order-4 lg:order-none">
+        <div className="order-4 lg:order-none fade-left">
           <Card
             title={datas[1].title}
             descriptionList={datas[0].descriptionList}
           />
         </div>
         <Image
-          className="order-3 lg:order-none"
+          className="order-3 lg:order-none fade-right"
           src={datas[1].image}
           alt="A man smiling"
         />
 
         {/* Third Row */}
         <Image
-          className="order-5 lg:order-none"
+          className="order-5 lg:order-none fade-left"
           src={datas[2].image}
           alt="A man smiling"
         />
-        <div className="order-6 lg:order-none">
+        <div className="order-6 lg:order-none fade-right">
           <Card
             title={datas[2].title}
             descriptionList={datas[0].descriptionList}
@@ -125,26 +129,26 @@ export default function ServiceDetails() {
         </div>
 
         {/* Fourth Row */}
-        <div className="order-8 lg:order-none">
+        <div className="order-8 lg:order-none fade-left">
           <Card
             title={datas[3].title}
             descriptionList={datas[0].descriptionList}
           />
         </div>
         <Image
-          className="order-7 lg:order-none"
+          className="order-7 lg:order-none fade-right"
           src={datas[3].image}
           alt="A man smiling"
         />
 
         {/* Fifth Row */}
         <Image
-          className="order-9 lg:order-none"
+          className="order-9 lg:order-none fade-left"
           src={datas[4].image}
           alt="A man smiling"
         />
 
-        <div className="order-10 lg:order-none">
+        <div className="order-10 lg:order-none fade-right">
           <Card
             title={datas[4].title}
             descriptionList={datas[0].descriptionList}
@@ -152,14 +156,14 @@ export default function ServiceDetails() {
         </div>
 
         {/* Sixth Row */}
-        <div className="order-12 lg:order-none">
+        <div className="order-12 lg:order-none fade-left">
           <Card
             title={datas[5].title}
             descriptionList={datas[0].descriptionList}
           />
         </div>
         <Image
-          className="order-11 lg:order-none"
+          className="order-11 lg:order-none fade-right"
           src={datas[5].image}
           alt="A man smiling"
         />

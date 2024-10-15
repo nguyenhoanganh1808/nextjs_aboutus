@@ -2,16 +2,39 @@ import Image, { StaticImageData } from "next/image";
 
 interface CardProps {
   image: StaticImageData;
+  imageSmall: StaticImageData;
   label: string;
+  detail: string;
 }
 
-export default function Card({ image, label }: CardProps) {
+export default function Card({ image, imageSmall, label, detail }: CardProps) {
   return (
-    <div className="flex flex-col items-center text-white p-6 lg:p-10 rounded-2xl lg:rounded-[50px] bg-gradient-to-b from-[#1253e9] via-[#852ae0] to-[#eb07d9]">
-      <div className="lg:h-32">
-        <Image width={100} height={100} src={image} alt={label} />
+    <div className="group lg:p-3 h-80 lg:h-96 w-80 bg-transparent [perspective:1000px]">
+      {/* Card container */}
+      <div className=" rounded-2xl lg:rounded-[50px] h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+        {/* Front Face */}
+        <div className="absolute inset-0 flex flex-col  items-center text-white p-6 lg:p-10 rounded-2xl lg:rounded-[50px] bg-gradient-to-b from-[#1253e9] via-[#852ae0] to-[#eb07d9] [backface-visibility:hidden]">
+          <div className="h-32 lg:h-40">
+            <Image width={110} height={110} src={image} alt={label} />
+          </div>
+          <p className="text-center text-base lg:text-xl mt-10">{label}</p>
+        </div>
+
+        {/* Back Face */}
+        <div className="absolute inset-0 rounded-2xl lg:rounded-[50px] [transform:rotateY(180deg)] [backface-visibility:hidden] bg-gradient-to-b from-[#1253e9] via-[#852ae0] to-[#eb07d9] p-1 w-full h-full">
+          <div className="flex w-full h-full lg:p-10 p-6 bg-white flex-col items-center justify-center rounded-2xl lg:rounded-[50px]">
+            <div className="lg:h-32">
+              <Image width={50} height={50} src={imageSmall} alt={label} />
+            </div>
+            <p className="text-center text-base text-gradient lg:text-xl mt-10">
+              {label}
+            </p>
+            <p className="text-center text-base text-[#757575] font-medium mt-10">
+              {detail}
+            </p>
+          </div>
+        </div>
       </div>
-      <p className="text-center text-base lg:text-xl mt-10">{label}</p>
     </div>
   );
 }

@@ -1,14 +1,13 @@
-import Image from "next/image";
-import Ticket from "../../images/ticket.png";
 import clsx from "clsx";
 
 interface CardProps {
   index: number;
   title: string;
   description: string;
+  svg: React.ReactNode;
 }
 
-export default function Card({ index, title, description }: CardProps) {
+export default function Card({ svg, index, title, description }: CardProps) {
   return (
     <div
       className={clsx(
@@ -21,7 +20,8 @@ export default function Card({ index, title, description }: CardProps) {
     >
       <div className="flex-col items-center gap-20 flex">
         <div className="self-stretch h-[245px] flex-col items-center gap-5 flex">
-          <Image src={Ticket} alt="ticket icon" />
+          {svg}
+
           <p className="text-gradient self-stretch h-9 text-center text-[#1253e9] text-3xl font-bold leading-[34px] group-hover:bg-white group-hover:bg-none transition-colors ">
             {title}
           </p>
