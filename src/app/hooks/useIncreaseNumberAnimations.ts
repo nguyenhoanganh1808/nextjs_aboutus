@@ -18,12 +18,14 @@ export function useIncreaseNumberAnimations({
     useState<string>(startValue); // Holds the formatted stat
   const statRef = useRef<HTMLParagraphElement>(null);
   const containerRef = useRef<HTMLDivElement>(null); // For intersection observer
+  const hasAnimated = useRef<boolean>(false);
 
   useEffect(() => {
+    let observerRefValue = null;
     // Intersection Observer callback
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       const [entry] = entries;
-      if (entry.isIntersecting && statRef.current) {
+      if (entry.isIntersecting && statRef.current && !hasAnimated.current) {
         gsap.fromTo(
           statRef.current,
           { innerText: startValue }, // Start value of the animation
@@ -38,6 +40,7 @@ export function useIncreaseNumberAnimations({
             },
           }
         );
+        hasAnimated.current = true;
       }
     };
 
@@ -48,12 +51,13 @@ export function useIncreaseNumberAnimations({
 
     if (containerRef.current) {
       observer.observe(containerRef.current); // Observe the component container
+      observerRefValue = containerRef.current;
     }
 
     // Cleanup on unmount
     return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
+      if (observerRefValue) {
+        observer.unobserve(observerRefValue);
       }
     };
   }, [startValue, endValue, duration, threshold]);

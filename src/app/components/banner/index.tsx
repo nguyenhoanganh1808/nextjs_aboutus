@@ -21,9 +21,9 @@ export default function Banner() {
             />
           </div>
 
-          <div className="p-6 xl:p-0 flex flex-col lg:flex-row items-center relative max-w-7xl mx-auto">
+          <div className="p-6 xl:p-0 flex flex-col lg:flex-row items-center relative max-w-6xl mx-auto">
             <div ref={fadeLeftHeader} className="">
-              <h1 className=" text-white text-5xl lg:text-[80px] font-bold capitalize leading-[66.24px] pb-8">
+              <h1 className="whitespace-nowrap text-white text-5xl lg:text-[70px] font-bold capitalize leading-[66.24px] pb-8">
                 ENJOY SPORT
               </h1>
 
