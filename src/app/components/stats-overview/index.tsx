@@ -6,18 +6,27 @@ export default function StatsOverview() {
   const datas = [
     {
       stat: "20",
+      startStat: "0",
+      defaultStat: "",
       title: "Tính năng cho các sự kiện",
     },
     {
       stat: "30",
+      startStat: "0",
+      defaultStat: "",
+
       title: "Đối tác trong và ngoài nước",
     },
     {
-      stat: "1K2",
+      stat: "2",
+      startStat: "0",
+      defaultStat: "1K",
       title: "Sự kiện đã sử dụng giải pháp của chúng tôi",
     },
     {
-      stat: "1M3",
+      stat: "3",
+      startStat: "0",
+      defaultStat: "1M",
       title: "Người dùng tin tưởng sử dụng",
     },
   ];
@@ -26,9 +35,15 @@ export default function StatsOverview() {
       <div className="absolute w-full h-fit">
         <Image src={StatBg} alt="" className="w-full opacity-20" />
       </div>
-      <ul className="flex py-36 px-40 gap-10">
+      <ul className="flex py-36 px-32 gap-16">
         {datas.map((data) => (
-          <StatColumn key={data.title} stat={data.stat} title={data.title} />
+          <StatColumn
+            key={data.title}
+            endStat={data.stat}
+            startStat={data.startStat}
+            title={data.title}
+            defaultStat={data.defaultStat}
+          />
         ))}
       </ul>
     </div>
