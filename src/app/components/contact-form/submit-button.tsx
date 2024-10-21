@@ -1,7 +1,7 @@
 export default function SubmitButton() {
   return (
     <button
-      className="px-[120px] lg:px-44 py-[22px] bg-white rounded-[30px] shadow group hover:"
+      className="lg:px-[120px] px-12 py-[16px] bg-white lg:rounded-[30px] rounded-lg shadow hover:cursor-pointer"
       type="submit"
     >
       <p className="text-gradient text-xl font-medium">Gửi</p>
