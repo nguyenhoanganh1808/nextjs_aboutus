@@ -10,7 +10,7 @@ export default function ServiceDetails() {
   const datas = [
     {
       image: serviceImage,
-      title: "Ticket - Racebook",
+      title: "Ticket - EnjoySport",
       descriptionList: [
         "Ứng dụng Digital Marketing (email, ZNS, social media) để hỗ trợ truyền thông sự kiện",
         "Mua vé không cần đăng nhập",
@@ -75,7 +75,7 @@ export default function ServiceDetails() {
     },
   ];
   return (
-    <div className="pt-10 px-10 flex flex-col items-center gap-8">
+    <div className="pt-10 px-10 mb-10 flex flex-col items-center gap-8">
       <div className="max-w-lg lg:max-w-max text-left lg:text-center">
         <h1 className="text-gradient text-3xl lg:text-[48px] leading-normal lg:leading-loose font-bold fade-up">
           CHI TIẾT VỀ DỊCH VỤ CỦA CHÚNG TÔI
@@ -88,14 +88,16 @@ export default function ServiceDetails() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl gap-6 place-items-stretch">
+      <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl gap-10 place-items-center">
         {/* First Row */}
         <Image
-          className="order-1 lg:order-none fade-left"
+          width={505}
+          height={296}
+          className="order-1 lg:order-none fade-left object-contain"
           src={datas[0].image}
           alt="A man smiling"
         />
-        <div className="order-2 lg:order-none fade-right">
+        <div id="ticket" className="order-2 lg:order-none fade-right">
           <Card
             title={datas[0].title}
             descriptionList={datas[0].descriptionList}
@@ -103,67 +105,77 @@ export default function ServiceDetails() {
         </div>
 
         {/* Second Row */}
-        <div className="order-4 lg:order-none fade-left">
+        <div id="stream" className="order-4 lg:order-none fade-left">
           <Card
             title={datas[1].title}
-            descriptionList={datas[0].descriptionList}
+            descriptionList={datas[1].descriptionList}
           />
         </div>
         <Image
-          className="order-3 lg:order-none fade-right"
+          width={505}
+          height={296}
+          className="order-3 lg:order-none fade-right object-contain"
           src={datas[1].image}
           alt="A man smiling"
         />
 
         {/* Third Row */}
         <Image
-          className="order-5 lg:order-none fade-left"
+          width={505}
+          height={296}
+          className="order-5 lg:order-none fade-left object-contain"
           src={datas[2].image}
           alt="A man smiling"
         />
-        <div className="order-6 lg:order-none fade-right">
+        <div id="photo" className="order-6 lg:order-none fade-right">
           <Card
             title={datas[2].title}
-            descriptionList={datas[0].descriptionList}
+            descriptionList={datas[2].descriptionList}
           />
         </div>
 
         {/* Fourth Row */}
-        <div className="order-8 lg:order-none fade-left">
+        <div id="video" className="order-8 lg:order-none fade-left">
           <Card
             title={datas[3].title}
-            descriptionList={datas[0].descriptionList}
+            descriptionList={datas[3].descriptionList}
           />
         </div>
         <Image
-          className="order-7 lg:order-none fade-right"
+          width={505}
+          height={296}
+          className="order-7 lg:order-none fade-right object-contain"
           src={datas[3].image}
           alt="A man smiling"
         />
 
         {/* Fifth Row */}
         <Image
-          className="order-9 lg:order-none fade-left"
+          width={505}
+          height={296}
+          className="order-9 lg:order-none fade-left object-contain"
           src={datas[4].image}
           alt="A man smiling"
         />
 
-        <div className="order-10 lg:order-none fade-right">
+        <div id="check-in" className="order-10 lg:order-none fade-right">
           <Card
             title={datas[4].title}
-            descriptionList={datas[0].descriptionList}
+            descriptionList={datas[4].descriptionList}
           />
         </div>
 
         {/* Sixth Row */}
-        <div className="order-12 lg:order-none fade-left">
+        <div id="timing" className="order-12 lg:order-none fade-left">
           <Card
             title={datas[5].title}
-            descriptionList={datas[0].descriptionList}
+            descriptionList={datas[5].descriptionList}
           />
         </div>
         <Image
-          className="order-11 lg:order-none fade-right"
+          width={505}
+          height={296}
+          className="order-11 lg:order-none fade-right object-contain"
           src={datas[5].image}
           alt="A man smiling"
         />
