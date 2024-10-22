@@ -10,7 +10,7 @@ export default function SolutionsForBusiness() {
       title: "Ticket",
       description:
         "Cổng bán vé sự kiện thể thao Enjoy Sport với những tính năng ưu việt và giao diện thân thiện với người dùng",
-
+      href: "ticket",
       svg: (
         <svg
           width="93"
@@ -47,6 +47,8 @@ export default function SolutionsForBusiness() {
       title: "Photo Service",
       description:
         "Hệ thống lưu trữ và tìm kiếm hình ảnh thông minh bằng số BIB thi đấu và nhận diện khuôn mặt với mật độ chính xác gần như tuyệt đối",
+      href: "photo",
+
       svg: (
         <svg
           width="76"
@@ -81,6 +83,8 @@ export default function SolutionsForBusiness() {
       title: "Timing",
       description:
         "Áp dụng công nghệ tốt nhất mang đến kết quả chính xác và trực quan trên trang kết quả thi đấu, cùng giấy chứng nhận hoàn thành chuyên nghiệp.",
+      href: "timing",
+
       svg: (
         <svg
           width="71"
@@ -115,6 +119,8 @@ export default function SolutionsForBusiness() {
       title: "Livestream",
       description:
         "Viêc sử dụng công nghệ tiên tiến đám bảo hệ thống Livestream bắt trọn mọi khoảnh khắc đẹp trên đường đua và ý nghĩa giải đấu mà BTC muốn hướng tới.",
+      href: "stream",
+
       svg: (
         <svg
           width="86"
@@ -149,6 +155,8 @@ export default function SolutionsForBusiness() {
       title: "Check-In",
       description:
         "Giải pháp công nghệ giúp việc Check-in được diễn ra nhanh chóng và giảm thiểu sai sót, thay thế phương pháp Check-in truyền thống.",
+      href: "check-in",
+
       svg: (
         <svg
           width="68"
@@ -201,6 +209,7 @@ export default function SolutionsForBusiness() {
             title={cardData.title}
             description={cardData.description}
             svg={cardData.svg}
+            href={cardData.href}
           />
         ))}
       </div>

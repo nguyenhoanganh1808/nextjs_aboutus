@@ -5,9 +5,16 @@ interface CardProps {
   title: string;
   description: string;
   svg: React.ReactNode;
+  href: string;
 }
 
-export default function Card({ svg, index, title, description }: CardProps) {
+export default function Card({
+  svg,
+  index,
+  title,
+  description,
+  href,
+}: CardProps) {
   return (
     <div
       className={clsx(
@@ -31,11 +38,14 @@ export default function Card({ svg, index, title, description }: CardProps) {
         </div>
 
         {/* Button */}
-        <button className="px-8 py-4 lg:px-5 lg:py-3 bg-gradient-to-b from-[#1253e9] via-[#852ae0] to-[#eb07d9] rounded-[800px] transition duration-300 ease-in-out group-hover:bg-white group-hover:bg-none">
+        <a
+          href={`#${href}`}
+          className="px-8 py-4 lg:px-5 lg:py-3 bg-gradient-to-b from-[#1253e9] via-[#852ae0] to-[#eb07d9] rounded-[800px] transition duration-300 ease-in-out group-hover:bg-white group-hover:bg-none"
+        >
           <p className="text-center text-white transition duration-300 ease-in-out group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-to-b from-[#1253e9] via-[#852ae0] to-[#eb07d9]">
             Read More
           </p>
-        </button>
+        </a>
       </div>
     </div>
   );
