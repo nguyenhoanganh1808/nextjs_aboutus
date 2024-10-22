@@ -34,8 +34,10 @@ export default function Banner() {
               </div>
 
               <div className="flex gap-4 pt-9 flex-wrap">
-                <Button>LIÊN HỆ</Button>
-                <Button>GIẢI PHÁP CỦA CHÚNG TÔI</Button>
+                <Button destinationId="">LIÊN HỆ</Button>
+                <Button destinationId="solutions-for-business">
+                  GIẢI PHÁP CỦA CHÚNG TÔI
+                </Button>
               </div>
             </div>
             <Image

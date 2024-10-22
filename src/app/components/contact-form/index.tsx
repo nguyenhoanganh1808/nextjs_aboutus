@@ -18,7 +18,7 @@ export default function ContactForm() {
           className="opacity-10 w-full"
         />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:max-w-7xl">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:max-w-screen-2xl">
         <Image
           className="lg:row-span-2 place-self-center lg:place-self-auto my-auto row-span-1 order-2 lg:order-1 fade-left w-[200px] lg:w-[600px]" // It becomes order 1 for smaller screens
           src={Robot}
