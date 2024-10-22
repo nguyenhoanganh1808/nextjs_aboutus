@@ -82,7 +82,7 @@ export default function ServiceDetails() {
     },
   ];
   return (
-    <div className="pt-10 px-10 mb-10 flex flex-col items-center gap-8 overflow-hidden">
+    <div className="pt-10 px-10 flex flex-col items-center gap-8">
       <div className="max-w-lg lg:max-w-max text-left lg:text-center">
         <h1 className="text-gradient text-3xl lg:text-[48px] leading-normal lg:leading-loose font-bold fade-up">
           CHI TIẾT VỀ DỊCH VỤ CỦA CHÚNG TÔI
@@ -94,62 +94,6 @@ export default function ServiceDetails() {
           thích chúng tôi!
         </p>
       </div>
-
-      {/* <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl gap-10 place-items-center">
-        {datas.map((data, index) => (
-          <React.Fragment key={index}>
-            {index % 2 === 0 ? (
-              <>
-                <Image
-                  id={data.id}
-                  width={505}
-                  height={296}
-                  className={`order-${
-                    index * 2 + 1
-                  } lg:order-none fade-left object-contain w-full`}
-                  src={data.image}
-                  alt={data.title}
-                />
-                <div
-                  id={data.id}
-                  className={`order-${
-                    index * 2 + 2
-                  } lg:order-none fade-right w-full`}
-                >
-                  <Card
-                    title={data.title}
-                    descriptionList={data.descriptionList}
-                  />
-                </div>
-              </>
-            ) : (
-              <>
-                <div
-                  id={data.id}
-                  className={`order-${
-                    index * 2 + 2
-                  } lg:order-none fade-left w-full`}
-                >
-                  <Card
-                    title={data.title}
-                    descriptionList={data.descriptionList}
-                  />
-                </div>
-                <Image
-                  id={data.id}
-                  width={505}
-                  height={296}
-                  className={`order-${
-                    index * 2 + 1
-                  } lg:order-none fade-right object-contain w-full`}
-                  src={data.image}
-                  alt={data.title}
-                />
-              </>
-            )}
-          </React.Fragment>
-        ))}
-      </div> */}
 
       <div className="grid grid-cols-1 max-w-6xl gap-10 place-items-center">
         {datas.map((data, index) => (
