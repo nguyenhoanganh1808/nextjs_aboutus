@@ -93,11 +93,11 @@ export default function ServiceDetails() {
         <Image
           width={505}
           height={296}
-          className="order-1 lg:order-none fade-left object-contain"
+          className="order-1 lg:order-none fade-left object-contain w-full"
           src={datas[0].image}
           alt="A man smiling"
         />
-        <div id="ticket" className="order-2 lg:order-none fade-right">
+        <div id="ticket" className="order-2 lg:order-none fade-right w-full">
           <Card
             title={datas[0].title}
             descriptionList={datas[0].descriptionList}
@@ -105,7 +105,7 @@ export default function ServiceDetails() {
         </div>
 
         {/* Second Row */}
-        <div id="stream" className="order-4 lg:order-none fade-left">
+        <div id="stream" className="order-4 lg:order-none fade-left w-full">
           <Card
             title={datas[1].title}
             descriptionList={datas[1].descriptionList}
@@ -114,7 +114,7 @@ export default function ServiceDetails() {
         <Image
           width={505}
           height={296}
-          className="order-3 lg:order-none fade-right object-contain"
+          className="order-3 lg:order-none fade-right object-contain w-full"
           src={datas[1].image}
           alt="A man smiling"
         />
@@ -123,11 +123,11 @@ export default function ServiceDetails() {
         <Image
           width={505}
           height={296}
-          className="order-5 lg:order-none fade-left object-contain"
+          className="order-5 lg:order-none fade-left object-contain w-full"
           src={datas[2].image}
           alt="A man smiling"
         />
-        <div id="photo" className="order-6 lg:order-none fade-right">
+        <div id="photo" className="order-6 lg:order-none fade-right w-full">
           <Card
             title={datas[2].title}
             descriptionList={datas[2].descriptionList}
@@ -135,7 +135,7 @@ export default function ServiceDetails() {
         </div>
 
         {/* Fourth Row */}
-        <div id="video" className="order-8 lg:order-none fade-left">
+        <div id="video" className="order-8 lg:order-none fade-left w-full">
           <Card
             title={datas[3].title}
             descriptionList={datas[3].descriptionList}
@@ -144,7 +144,7 @@ export default function ServiceDetails() {
         <Image
           width={505}
           height={296}
-          className="order-7 lg:order-none fade-right object-contain"
+          className="order-7 lg:order-none fade-right object-contain w-full"
           src={datas[3].image}
           alt="A man smiling"
         />
@@ -153,12 +153,12 @@ export default function ServiceDetails() {
         <Image
           width={505}
           height={296}
-          className="order-9 lg:order-none fade-left object-contain"
+          className="order-9 lg:order-none fade-left object-contain w-full"
           src={datas[4].image}
           alt="A man smiling"
         />
 
-        <div id="check-in" className="order-10 lg:order-none fade-right">
+        <div id="check-in" className="order-10 lg:order-none fade-right w-full">
           <Card
             title={datas[4].title}
             descriptionList={datas[4].descriptionList}
@@ -166,7 +166,7 @@ export default function ServiceDetails() {
         </div>
 
         {/* Sixth Row */}
-        <div id="timing" className="order-12 lg:order-none fade-left">
+        <div id="timing" className="order-12 lg:order-none fade-left w-full">
           <Card
             title={datas[5].title}
             descriptionList={datas[5].descriptionList}
@@ -175,7 +175,7 @@ export default function ServiceDetails() {
         <Image
           width={505}
           height={296}
-          className="order-11 lg:order-none fade-right object-contain"
+          className="order-11 lg:order-none fade-right object-contain w-full"
           src={datas[5].image}
           alt="A man smiling"
         />

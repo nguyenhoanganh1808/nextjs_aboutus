@@ -3,8 +3,8 @@ import React from "react";
 import { useIncreaseNumberAnimations } from "@/app/hooks/useIncreaseNumberAnimations";
 
 interface StatColumnProps {
-  startStat: string; // Starting formatted stat like "1K1"
-  endStat: string; // Ending formatted stat like "1K2"
+  startStat: number; // Starting formatted stat like "1K1"
+  endStat: number; // Ending formatted stat like "1K2"
   defaultStat: string;
   title: string;
 }

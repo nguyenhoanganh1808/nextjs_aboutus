@@ -18,6 +18,14 @@ export const useGsapAnimations = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
+    // const isNonMobileScreen = window.innerWidth > 768;
+
+    // // If on mobile screen, skip animations
+    // if (!isNonMobileScreen) {
+    //   setIsLoading(false);
+    //   return;
+    // }
+
     try {
       setIsLoading(true);
 

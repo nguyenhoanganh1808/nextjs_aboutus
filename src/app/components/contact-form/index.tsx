@@ -20,7 +20,7 @@ export default function ContactForm() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:max-w-7xl">
         <Image
-          className="lg:row-span-2 place-self-center lg:place-self-auto row-span-1 order-2 lg:order-1 fade-left w-[200px] lg:w-[400px]" // It becomes order 1 for smaller screens
+          className="lg:row-span-2 place-self-center lg:place-self-auto my-auto row-span-1 order-2 lg:order-1 fade-left w-[200px] lg:w-[600px]" // It becomes order 1 for smaller screens
           src={Robot}
           width={400}
           alt="Robot"
