@@ -10,7 +10,7 @@ export default function Banner() {
   const { fadeLeftHeader, fadeRightHeader } = useGsapAnimations();
 
   return (
-    <div className=" bg-gradient-to-r from-blue-500/90 via-purple-500/90 to-pink-600/90 bg-cover bg-center">
+    <div className=" bg-gradient-to-r from-blue-500/90 via-purple-500/90 to-pink-600/90 bg-cover bg-center overflow-hidden">
       <>
         <div className="mx-auto relative">
           <div className="absolute w-full top-0 md:block hidden">

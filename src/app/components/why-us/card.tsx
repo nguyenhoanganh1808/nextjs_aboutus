@@ -16,7 +16,7 @@ export default function Card({ image, imageSmall, label, detail }: CardProps) {
         <div className="absolute inset-0 flex flex-col justify-center gap-14 items-center text-white p-6 lg:p-10 rounded-2xl lg:rounded-[50px] bg-gradient-to-b from-[#1253e9] via-[#852ae0] to-[#eb07d9] [backface-visibility:hidden]">
           <div className="h-[110px]">
             <Image
-              className="md:w-[80px] max-h-[100px]"
+              className="w-[70px] md:w-[80px] max-h-[100px]"
               width={100}
               height={100}
               src={image}

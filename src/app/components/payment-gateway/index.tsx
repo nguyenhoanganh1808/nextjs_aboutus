@@ -15,7 +15,7 @@ import { useGsapAnimations } from "@/app/hooks/useGsapAnimations";
 export default function PaymentGateWay() {
   const {} = useGsapAnimations();
   return (
-    <div className="bg-[#F6F6F6] pt-10 p-8 px-10 flex flex-col items-center gap-8">
+    <div className="bg-[#F6F6F6] pt-10 p-8 px-10 flex flex-col items-center gap-8 overflow-hidden">
       <div className="max-w-lg lg:max-w-max text-left lg:text-center">
         <h1 className="text-gradient text-3xl lg:text-[48px] lg:leading-loose font-bold fade-up">
           ĐỐI TÁC THANH TOÁN
