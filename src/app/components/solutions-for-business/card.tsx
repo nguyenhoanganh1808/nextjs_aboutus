@@ -15,6 +15,12 @@ export default function Card({
   description,
   href,
 }: CardProps) {
+  const scrollToElement = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
   return (
     <div
       className={clsx(
@@ -38,14 +44,15 @@ export default function Card({
         </div>
 
         {/* Button */}
-        <a
-          href={`#${href}`}
+        <button
+          // href="#"
+          onClick={() => scrollToElement(href)}
           className="px-8 py-4 lg:px-5 lg:py-3 bg-gradient-to-b from-[#1253e9] via-[#852ae0] to-[#eb07d9] rounded-[800px] transition duration-300 ease-in-out group-hover:bg-white group-hover:bg-none"
         >
           <p className="text-center text-white transition duration-300 ease-in-out group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-to-b from-[#1253e9] via-[#852ae0] to-[#eb07d9]">
             Read More
           </p>
-        </a>
+        </button>
       </div>
     </div>
   );

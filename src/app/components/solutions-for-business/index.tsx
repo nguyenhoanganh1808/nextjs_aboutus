@@ -47,7 +47,7 @@ export default function SolutionsForBusiness() {
       title: "Photo Service",
       description:
         "Hệ thống lưu trữ và tìm kiếm hình ảnh thông minh bằng số BIB thi đấu và nhận diện khuôn mặt với mật độ chính xác gần như tuyệt đối",
-      href: "photo",
+      href: "photo-service",
 
       svg: (
         <svg
@@ -119,7 +119,7 @@ export default function SolutionsForBusiness() {
       title: "Livestream",
       description:
         "Viêc sử dụng công nghệ tiên tiến đám bảo hệ thống Livestream bắt trọn mọi khoảnh khắc đẹp trên đường đua và ý nghĩa giải đấu mà BTC muốn hướng tới.",
-      href: "stream",
+      href: "livestream",
 
       svg: (
         <svg
@@ -188,6 +188,7 @@ export default function SolutionsForBusiness() {
       ),
     },
   ];
+
   return (
     <div className="pt-10 p-8 px-10 flex flex-col items-center gap-8 bg-[#F5F6FE] overflow-hidden">
       <div className="max-w-lg lg:max-w-max text-left lg:text-center">

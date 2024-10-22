@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import Image from "next/image";
 import Card from "./card";
 import serviceImage from "@/../public/images/Overlay+Shadow.png";
@@ -9,6 +10,7 @@ export default function ServiceDetails() {
   const {} = useGsapAnimations();
   const datas = [
     {
+      id: "ticket",
       image: serviceImage,
       title: "Ticket - EnjoySport",
       descriptionList: [
@@ -20,6 +22,7 @@ export default function ServiceDetails() {
       ],
     },
     {
+      id: "livestream",
       image: serviceImage,
       title: "Streaming - Livestream sự kiện",
       descriptionList: [
@@ -30,6 +33,7 @@ export default function ServiceDetails() {
       ],
     },
     {
+      id: "photo-service",
       image: serviceImage,
       title: "Photo Service",
       descriptionList: [
@@ -43,6 +47,7 @@ export default function ServiceDetails() {
       ],
     },
     {
+      id: "",
       image: serviceImage,
       title: "Quay dựng video chất lượng cao",
       descriptionList: [
@@ -53,6 +58,7 @@ export default function ServiceDetails() {
       ],
     },
     {
+      id: "check-in",
       image: serviceImage,
       title: "Check-in",
       descriptionList: [
@@ -63,6 +69,7 @@ export default function ServiceDetails() {
       ],
     },
     {
+      id: "timing",
       image: serviceImage,
       title: "Timing",
       descriptionList: [
@@ -88,97 +95,95 @@ export default function ServiceDetails() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl gap-10 place-items-center">
-        {/* First Row */}
-        <Image
-          width={505}
-          height={296}
-          className="order-1 lg:order-none fade-left object-contain w-full"
-          src={datas[0].image}
-          alt="A man smiling"
-        />
-        <div id="ticket" className="order-2 lg:order-none fade-right w-full">
-          <Card
-            title={datas[0].title}
-            descriptionList={datas[0].descriptionList}
-          />
-        </div>
+      {/* <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl gap-10 place-items-center">
+        {datas.map((data, index) => (
+          <React.Fragment key={index}>
+            {index % 2 === 0 ? (
+              <>
+                <Image
+                  id={data.id}
+                  width={505}
+                  height={296}
+                  className={`order-${
+                    index * 2 + 1
+                  } lg:order-none fade-left object-contain w-full`}
+                  src={data.image}
+                  alt={data.title}
+                />
+                <div
+                  id={data.id}
+                  className={`order-${
+                    index * 2 + 2
+                  } lg:order-none fade-right w-full`}
+                >
+                  <Card
+                    title={data.title}
+                    descriptionList={data.descriptionList}
+                  />
+                </div>
+              </>
+            ) : (
+              <>
+                <div
+                  id={data.id}
+                  className={`order-${
+                    index * 2 + 2
+                  } lg:order-none fade-left w-full`}
+                >
+                  <Card
+                    title={data.title}
+                    descriptionList={data.descriptionList}
+                  />
+                </div>
+                <Image
+                  id={data.id}
+                  width={505}
+                  height={296}
+                  className={`order-${
+                    index * 2 + 1
+                  } lg:order-none fade-right object-contain w-full`}
+                  src={data.image}
+                  alt={data.title}
+                />
+              </>
+            )}
+          </React.Fragment>
+        ))}
+      </div> */}
 
-        {/* Second Row */}
-        <div id="stream" className="order-4 lg:order-none fade-left w-full">
-          <Card
-            title={datas[1].title}
-            descriptionList={datas[1].descriptionList}
-          />
-        </div>
-        <Image
-          width={505}
-          height={296}
-          className="order-3 lg:order-none fade-right object-contain w-full"
-          src={datas[1].image}
-          alt="A man smiling"
-        />
-
-        {/* Third Row */}
-        <Image
-          width={505}
-          height={296}
-          className="order-5 lg:order-none fade-left object-contain w-full"
-          src={datas[2].image}
-          alt="A man smiling"
-        />
-        <div id="photo" className="order-6 lg:order-none fade-right w-full">
-          <Card
-            title={datas[2].title}
-            descriptionList={datas[2].descriptionList}
-          />
-        </div>
-
-        {/* Fourth Row */}
-        <div id="video" className="order-8 lg:order-none fade-left w-full">
-          <Card
-            title={datas[3].title}
-            descriptionList={datas[3].descriptionList}
-          />
-        </div>
-        <Image
-          width={505}
-          height={296}
-          className="order-7 lg:order-none fade-right object-contain w-full"
-          src={datas[3].image}
-          alt="A man smiling"
-        />
-
-        {/* Fifth Row */}
-        <Image
-          width={505}
-          height={296}
-          className="order-9 lg:order-none fade-left object-contain w-full"
-          src={datas[4].image}
-          alt="A man smiling"
-        />
-
-        <div id="check-in" className="order-10 lg:order-none fade-right w-full">
-          <Card
-            title={datas[4].title}
-            descriptionList={datas[4].descriptionList}
-          />
-        </div>
-
-        {/* Sixth Row */}
-        <div id="timing" className="order-12 lg:order-none fade-left w-full">
-          <Card
-            title={datas[5].title}
-            descriptionList={datas[5].descriptionList}
-          />
-        </div>
-        <Image
-          width={505}
-          height={296}
-          className="order-11 lg:order-none fade-right object-contain w-full"
-          src={datas[5].image}
-          alt="A man smiling"
-        />
+      <div className="grid grid-cols-1 max-w-6xl gap-10 place-items-center">
+        {datas.map((data, index) => (
+          <div
+            key={data.id}
+            id={data.id}
+            className="flex w-full gap-10 items-center lg:flex-nowrap flex-wrap"
+          >
+            <div
+              className={`w-full ${
+                index % 2 === 0
+                  ? "lg:order-1 fade-left"
+                  : "lg:order-2 fade-right"
+              }`}
+            >
+              <Image
+                width={505}
+                height={296}
+                className="object-contain w-full"
+                src={data.image}
+                alt={data.title}
+              />
+            </div>
+            <div
+              className={`w-full ${
+                index % 2 === 0
+                  ? "lg:order-2 fade-right"
+                  : "lg:order-1 fade-left"
+              }`}
+            >
+              <Card title={data.title} descriptionList={data.descriptionList} />
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
