@@ -10,7 +10,7 @@ import { useGsapAnimations } from "@/app/hooks/useGsapAnimations";
 export default function ContactForm() {
   const {} = useGsapAnimations();
   return (
-    <div className="overflow-hidden relative lg:p-10 p-3 lg:m-10 m-5 lg:rounded-[100px] rounded-lg bg-gradient-to-b from-blue-600 via-purple-600 to-fuchsia-600 bg-cover bg-center flex flex-col lg:flex-row items-center justify-center text-white">
+    <div className="overflow-hidden relative lg:p-10 p-6 lg:m-10 m-5 lg:rounded-[100px] rounded-lg bg-gradient-to-b from-blue-600 via-purple-600 to-fuchsia-600 bg-cover bg-center flex flex-col lg:flex-row items-center justify-center text-white">
       <div className="absolute w-full lg:block hidden z-0">
         <Image
           src={ContactBackground}
@@ -18,9 +18,9 @@ export default function ContactForm() {
           className="opacity-10 w-full"
         />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:max-w-screen-2xl">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:max-w-6xl">
         <Image
-          className="lg:row-span-2 place-self-center lg:place-self-auto my-auto row-span-1 order-2 lg:order-1 fade-left w-[200px] lg:w-[600px]" // It becomes order 1 for smaller screens
+          className="lg:row-span-2 place-self-center lg:place-self-auto my-auto row-span-1 order-2 lg:order-1 fade-left w-[200px] lg:w-[400px]" // It becomes order 1 for smaller screens
           src={Robot}
           width={400}
           alt="Robot"

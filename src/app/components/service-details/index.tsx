@@ -95,7 +95,7 @@ export default function ServiceDetails() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 max-w-6xl gap-10 place-items-center">
+      <div className="grid grid-cols-1 lg:max-w-6xl max-w-lg gap-10 place-items-center">
         {datas.map((data, index) => (
           <div
             key={data.id}
