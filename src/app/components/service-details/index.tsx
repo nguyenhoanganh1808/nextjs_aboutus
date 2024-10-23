@@ -117,7 +117,7 @@ export default function ServiceDetails() {
               <Image
                 width={505}
                 height={296}
-                className="object-contain w-full"
+                className="object-contain w-full rounded-[10px]"
                 src={data.image}
                 alt={data.title}
               />
