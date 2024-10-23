@@ -10,7 +10,10 @@ import { useGsapAnimations } from "@/app/hooks/useGsapAnimations";
 export default function ContactForm() {
   const {} = useGsapAnimations();
   return (
-    <div className="overflow-hidden relative lg:p-10 p-6 lg:m-10 m-5 lg:rounded-[100px] rounded-lg bg-gradient-to-b from-blue-600 via-purple-600 to-fuchsia-600 bg-cover bg-center flex flex-col lg:flex-row items-center justify-center text-white">
+    <div
+      id="contact-form"
+      className="overflow-hidden relative lg:p-10 p-6 lg:m-10 m-5 lg:rounded-[100px] rounded-lg bg-gradient-to-b from-blue-600 via-purple-600 to-fuchsia-600 bg-cover bg-center flex flex-col lg:flex-row items-center justify-center text-white"
+    >
       <div className="absolute w-full lg:block hidden z-0">
         <Image
           src={ContactBackground}
