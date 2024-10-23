@@ -118,7 +118,7 @@ export default function SolutionsForBusiness() {
     {
       title: "Livestream",
       description:
-        "Viêc sử dụng công nghệ tiên tiến đám bảo hệ thống Livestream bắt trọn mọi khoảnh khắc đẹp trên đường đua và ý nghĩa giải đấu mà BTC muốn hướng tới.",
+        "Việc sử dụng công nghệ tiên tiến đảm bảo hệ thống Livestream bắt trọn mọi khoảnh khắc đẹp trên đường đua và ý nghĩa giải đấu mà BTC muốn hướng tới.",
       href: "livestream",
 
       svg: (
@@ -200,7 +200,7 @@ export default function SolutionsForBusiness() {
         </h1>
         <p className="text-[#757575] text-sm md:text-base font-normal leading-relaxed w-full max-w-3xl fade-up">
           Với đội ngũ nhiều năm kinh nghiệm trong lĩnh vực công nghệ và thể
-          thao, chung tôi tự hào đem đến những giải pháp tối ưu nhất cho các đơn
+          thao, chúng tôi tự hào đem đến những giải pháp tối ưu nhất cho các đơn
           vị tổ chức sự kiện
         </p>
       </div>

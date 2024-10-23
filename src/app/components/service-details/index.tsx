@@ -46,7 +46,7 @@ export default function ServiceDetails() {
         "Nhận diện thông minh bằng khuôn mặt",
         "Cập nhật hình ảnh thi đấu liên tục trong suốt quá trình diễn ra giải đấu",
         "Hiển thị thời gian thi đấu ngay trên ảnh thi đấu",
-        "Cập nhật thông tin đến VĐV qua ZNS, Email Marketing",
+        "Cập nhật thông tin đến vận động viên qua ZNS, Email Marketing",
         "Hỗ trợ BTC đóng dấu logo và nhúng kết quả hình ảnh lên website giải đấu",
         "Tính năng bán ảnh chất lượng cao",
       ],
@@ -67,7 +67,7 @@ export default function ServiceDetails() {
       image: checkinImage,
       title: "Check-in",
       descriptionList: [
-        "Quản lý thông tin VĐV check-in sự kiện",
+        "Quản lý thông tin vận động viên check-in sự kiện",
         "Ứng dụng công nghệ hiện đại",
         "Cung cấp & hỗ trợ nguồn dữ liệu tập trung",
         "Quản lý BIB và Racekit tối ưu",
@@ -79,8 +79,8 @@ export default function ServiceDetails() {
       title: "Timing",
       descriptionList: [
         "Hiển thị chính xác thành tích trên trang thi đấu",
-        "Thông báo kết quả VĐV qua ZNS",
-        "Dự đoán thành tích VĐV bằng hệ thống hiện đại",
+        "Thông báo kết quả vận động viên qua ZNS",
+        "Dự đoán thành tích vận động viên bằng hệ thống hiện đại",
         "Giấy chứng nhận điện tử chuyên nghiệp",
         "Hệ thống linh hoạt đáp ứng mọi loại hình thể thao",
       ],
