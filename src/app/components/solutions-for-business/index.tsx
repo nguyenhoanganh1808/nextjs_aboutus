@@ -192,7 +192,7 @@ export default function SolutionsForBusiness() {
   return (
     <div
       id="solutions-for-business"
-      className="pt-10 p-8 px-10 flex flex-col items-center gap-8 bg-[#F5F6FE] overflow-hidden"
+      className="pt-10 p-8 px-10 flex flex-col items-center gap-8 bg-[#F5F6FE] dark:text-white overflow-hidden"
     >
       <div className="max-w-lg lg:max-w-max text-left lg:text-center flex lg:items-center flex-col">
         <h1 className="text-gradient text-3xl lg:text-[48px] lg:leading-loose font-bold fade-up">

@@ -83,7 +83,7 @@ export default function WhyUs() {
     },
   ];
   return (
-    <div className="pt-10 p-8 px-10 flex flex-col items-center gap-8 ">
+    <div className="pt-10 p-8 px-10 flex flex-col items-center gap-8 bg-white">
       <div className="max-w-lg lg:max-w-max text-left lg:text-center">
         <h1 className="text-gradient text-3xl lg:text-[48px] lg:leading-loose font-bold fade-up">
           VÌ SAO NÊN CHỌN CHÚNG TÔI
