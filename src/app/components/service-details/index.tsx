@@ -3,7 +3,12 @@
 import React from "react";
 import Image from "next/image";
 import Card from "./card";
-import serviceImage from "@/../public/images/Overlay+Shadow.png";
+import checkinImage from "@/../public/images/service-details/check-in.jpg";
+import livestreamImage from "@/../public/images/service-details/livestream.jpg";
+import photoServiceImage from "@/../public/images/service-details/photo-service.jpg";
+import ticketImage from "@/../public/images/service-details/ticket.jpg";
+import timingImage from "@/../public/images/service-details/timing.jpg";
+import videoImage from "@/../public/images/service-details/video.jpg";
 import { useGsapAnimations } from "@/app/hooks/useGsapAnimations";
 
 export default function ServiceDetails() {
@@ -11,7 +16,7 @@ export default function ServiceDetails() {
   const datas = [
     {
       id: "ticket",
-      image: serviceImage,
+      image: ticketImage,
       title: "Ticket - EnjoySport",
       descriptionList: [
         "Ứng dụng Digital Marketing (email, ZNS, social media) để hỗ trợ truyền thông sự kiện",
@@ -23,7 +28,7 @@ export default function ServiceDetails() {
     },
     {
       id: "livestream",
-      image: serviceImage,
+      image: livestreamImage,
       title: "Streaming - Livestream sự kiện",
       descriptionList: [
         "Ứng dụng công nghệ tiên tiến",
@@ -34,7 +39,7 @@ export default function ServiceDetails() {
     },
     {
       id: "photo-service",
-      image: serviceImage,
+      image: photoServiceImage,
       title: "Photo Service",
       descriptionList: [
         "Nhận diện thông minh bằng số BIB, ký tự trên áo mũ thi đấu",
@@ -48,7 +53,7 @@ export default function ServiceDetails() {
     },
     {
       id: "",
-      image: serviceImage,
+      image: videoImage,
       title: "Quay dựng video chất lượng cao",
       descriptionList: [
         "Xây dựng kịch bản theo mong muốn của bạn",
@@ -59,7 +64,7 @@ export default function ServiceDetails() {
     },
     {
       id: "check-in",
-      image: serviceImage,
+      image: checkinImage,
       title: "Check-in",
       descriptionList: [
         "Quản lý thông tin VĐV check-in sự kiện",
@@ -70,7 +75,7 @@ export default function ServiceDetails() {
     },
     {
       id: "timing",
-      image: serviceImage,
+      image: timingImage,
       title: "Timing",
       descriptionList: [
         "Hiển thị chính xác thành tích trên trang thi đấu",
