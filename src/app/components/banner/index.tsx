@@ -28,7 +28,7 @@ export default function Banner() {
               </h1>
 
               <div className="text-white text-[21px] font-medium tracking-tight">
-                Đơn vị cung cấp các giải pháp công nghệ về thể thao, mang dến
+                Đơn vị cung cấp các giải pháp công nghệ về thể thao, mang đến
                 những trải nghiệm dịch vụ tối ưu cho cả người tổ chức sự kiện và
                 người tham gia{" "}
               </div>

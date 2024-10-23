@@ -43,14 +43,14 @@ export default function WhyUs() {
       imgSmall: PhoneSmallImage,
       label: "Giao diện thân thiện",
       detail:
-        "Hệ thống đăng ký trực tuyến tiện lợi, hỗ trư thanh toán và quản lý dữ liệu người tham gia",
+        "Hệ thống đăng ký trực tuyến tiện lợi, hỗ trợ thanh toán và quản lý dữ liệu người tham gia",
     },
     {
       img: InforImage,
       imgSmall: InforSmallImage,
       label: "Tối ưu hóa thông tin",
       detail:
-        "Cho phép người dung mua vé ẩn danh giúp quá trình diễn ra nhanh chống, tiết kiệm thời gian",
+        "Cho phép người dùng mua vé ẩn danh giúp quá trình diễn ra nhanh chóng, tiết kiệm thời gian",
     },
     {
       img: ThumbImage,
@@ -65,14 +65,14 @@ export default function WhyUs() {
       imgSmall: CostSmallImage,
       label: "Tối ưu hóa chi phí",
       detail:
-        "Chúng tôi mang đến những giải pháp tốt nhất với chi phí tối ưu nhât dành cho nhà tổ chức sự kiện",
+        "Chúng tôi mang đến những giải pháp tốt nhất với chi phí tối ưu nhất dành cho nhà tổ chức sự kiện",
     },
     {
       img: NetworkImage,
       imgSmall: NetworkSmallImage,
-      label: "Hỗ trợ truyển thông sự kiện",
+      label: "Hỗ trợ truyền thông sự kiện",
       detail:
-        "GIúp sự kiện của bạn nổi bật và tạo dấu ấn mạnh mẽ trong lòng khách hàng với chiến lược truyền thông chuyên nghiệp",
+        "Giúp sự kiện của bạn nổi bật và tạo dấu ấn mạnh mẽ trong lòng khách hàng với chiến lược truyền thông chuyên nghiệp",
     },
     {
       img: HumanImage,
@@ -86,11 +86,11 @@ export default function WhyUs() {
     <div className="pt-10 p-8 px-10 flex flex-col items-center gap-8 ">
       <div className="max-w-lg lg:max-w-max text-left lg:text-center">
         <h1 className="text-gradient text-3xl lg:text-[48px] lg:leading-loose font-bold fade-up">
-          WHY CHOOSE US
+          VÌ SAO NÊN CHỌN CHÚNG TÔI
         </h1>
         <p className="text-[#757575] text-sm md:text-base font-normal leading-relaxed max-w-3xl fade-up">
           Với đội ngũ nhiều năm kinh nghiệm trong lĩnh vực công nghệ và thể
-          thao, chung tôi tự hào đem đến những giải pháp tối ưu nhất cho các đơn
+          thao, chúng tôi tự hào đem đến những giải pháp tối ưu nhất cho các đơn
           vị tổ chức sự kiện
         </p>
       </div>

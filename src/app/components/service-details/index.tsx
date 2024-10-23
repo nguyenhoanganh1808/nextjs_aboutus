@@ -65,7 +65,7 @@ export default function ServiceDetails() {
     {
       id: "check-in",
       image: checkinImage,
-      title: "Check-in",
+      title: "Check-In",
       descriptionList: [
         "Quản lý thông tin VĐV check-in sự kiện",
         "Ứng dụng công nghệ hiện đại",
@@ -88,16 +88,10 @@ export default function ServiceDetails() {
   ];
   return (
     <div className="pt-10 lg:mb-10 px-10 flex flex-col items-center gap-8 overflow-hidden">
-      <div className="max-w-lg lg:max-w-max text-left lg:text-center text-left flex lg:items-center flex-col">
+      <div className="max-w-lg lg:max-w-max text-left lg:text-center flex lg:items-center flex-col">
         <h1 className="text-gradient text-3xl lg:text-[48px] leading-normal lg:leading-loose font-bold fade-up">
           CHI TIẾT VỀ DỊCH VỤ CỦA CHÚNG TÔI
         </h1>
-        <p className="text-[#757575] text-sm md:text-base font-normal leading-relaxed max-w-3xl fade-up">
-          Là đơn vị cung cấp dịch vụ SEO tổng thể chuyên nghiệp hàng đầu Việt
-          Nam, đây là những lí do khiến hàng trăm doanh nghiệp lựa chọn GTV
-          SEO là bạn đồng hành trên con đường phát triển. Và bạn cũng sẽ yêu
-          thích chúng tôi!
-        </p>
       </div>
 
       <div className="grid grid-cols-1 lg:max-w-6xl max-w-lg gap-10 place-items-center">
