@@ -65,7 +65,7 @@ export default function ServiceDetails() {
     {
       id: "check-in",
       image: checkinImage,
-      title: "Check-In",
+      title: "Check-in",
       descriptionList: [
         "Quản lý thông tin VĐV check-in sự kiện",
         "Ứng dụng công nghệ hiện đại",

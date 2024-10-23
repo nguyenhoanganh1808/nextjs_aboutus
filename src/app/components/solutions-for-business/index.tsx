@@ -152,7 +152,7 @@ export default function SolutionsForBusiness() {
       ),
     },
     {
-      title: "Check-In",
+      title: "Check-in",
       description:
         "Giải pháp công nghệ giúp việc Check-in được diễn ra nhanh chóng và giảm thiểu sai sót, thay thế phương pháp Check-in truyền thống.",
       href: "check-in",
